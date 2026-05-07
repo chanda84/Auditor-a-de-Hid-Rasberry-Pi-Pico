@@ -819,3 +819,32 @@ Simple payloads are:
 ```text
 Simplicity beats complexity in HID automation.
 ```
+
+# ⚠️ Disclaimer
+
+This project was developed exclusively for educational purposes, controlled security research, and authorized auditing environments.
+
+The implementation focuses on:
+
+* HID automation research
+* PowerShell scripting
+* USB HID device behavior
+* Windows inventory and audit collection
+* Stability and payload engineering
+
+This project is **NOT designed for malicious activity**, credential theft, persistence, unauthorized access, or covert execution.
+For this reason:
+
+* execution is intentionally visible
+* no stealth or persistence mechanisms were implemented
+* no background exfiltration features were added
+
+The author assumes:
+
+* all testing is performed on systems owned by the tester or explicitly authorized environments
+* users understand and comply with applicable laws and policies
+
+The author is **not responsible for misuse, unauthorized deployment, or illegal activities** performed using any concepts, code, or documentation contained in this repository.
+
+Use responsibly and ethically.
+
