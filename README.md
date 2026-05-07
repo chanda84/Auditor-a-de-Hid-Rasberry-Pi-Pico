@@ -848,3 +848,163 @@ The author is **not responsible for misuse, unauthorized deployment, or illegal 
 
 Use responsibly and ethically.
 
+## 🎓 Educational Focus
+
+This project was created as a learning and research exercise focused on:
+
+* USB HID device behavior
+* CircuitPython automation
+* PowerShell interaction
+* Windows inventory collection
+* HID payload stability
+* Keyboard layout handling
+* Timing and execution reliability
+* Real-world troubleshooting methodologies
+
+The primary objective is to document the engineering process, lessons learned, and technical challenges encountered while building stable HID-based automation workflows in controlled environments.
+
+The repository emphasizes:
+
+* debugging
+* testing methodology
+* architecture design
+* execution flow analysis
+* reliability improvements
+
+rather than offensive capabilities or covert execution.
+
+---
+
+# ⚠️ Project Limitations
+
+This public repository intentionally excludes:
+
+* fully operational payloads
+* stealth execution mechanisms
+* persistence techniques
+* credential extraction
+* exfiltration functionality
+* hidden/background execution
+* automated offensive workflows
+
+Several implementation details were deliberately removed or sanitized to prevent misuse while preserving the educational and research value of the project.
+
+The focus remains on:
+
+* HID engineering concepts
+* PowerShell behavior
+* automation reliability
+* hardware/software interaction
+* troubleshooting and debugging practices
+
+---
+
+# 🛠️ HID Troubleshooting & Layout Challenges
+
+One of the most important aspects documented in this project is the instability that can occur during HID automation.
+
+## Key Issues Encountered
+
+### Keyboard Layout Mismatches
+
+Different keyboard layouts caused character translation problems:
+
+| Expected | Received |
+| -------- | -------- |
+| ;        | ñ        |
+| :        | Ñ        |
+| /        | -        |
+| -        | '        |
+
+This demonstrated how strongly HID payloads depend on the target system language and keyboard configuration.
+
+---
+
+## Timing Instability
+
+Long payloads and rapid execution caused:
+
+* missing characters
+* malformed commands
+* PowerShell syntax errors
+* interrupted execution
+
+### Mitigation
+
+The final approach prioritized:
+
+* character-by-character writing
+* controlled delays
+* sequential execution
+* simplified commands
+
+---
+
+## PowerShell vs CMD Behavior
+
+Several commands behaved differently depending on the shell environment.
+
+Example:
+
+```powershell id="95vjlwm"
+date /t
+```
+
+works in CMD but fails in PowerShell.
+
+This highlighted the importance of:
+
+* environment awareness
+* shell-specific syntax
+* incremental testing
+
+---
+
+## Focus and Window Control
+
+Applications such as browsers or editors occasionally intercepted keyboard input, breaking payload execution.
+
+The project therefore adopted:
+
+* minimal focus switching
+* sequential workflows
+* simplified execution chains
+
+---
+
+# 🔒 Responsible Disclosure & Public Release Notes
+
+This repository is a sanitized public release intended for:
+
+* education
+* research
+* documentation
+* portfolio demonstration
+
+Operational payloads and sensitive implementation details were intentionally omitted.
+
+The project is not intended to facilitate unauthorized access, credential collection, persistence, or malicious deployment.
+
+All demonstrations and testing were performed in controlled and authorized environments.
+
+---
+
+# 📌 Additional Notes
+
+The value of this project is not the payload itself, but rather:
+
+* the engineering process
+* troubleshooting methodology
+* HID reliability analysis
+* layout handling strategies
+* PowerShell behavior analysis
+* iterative debugging techniques
+
+The repository should be viewed as:
+
+* a technical research notebook
+* a HID automation study
+* a documentation and learning resource
+
+rather than an operational offensive toolkit.
+
